@@ -1,0 +1,247 @@
+.manage-events-container {
+    padding: 1rem 0;
+}
+
+.manage-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .manage-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.manage-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.manage-card-poster {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+
+.manage-card-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.manage-card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.manage-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.category-tag {
+    background: rgba(20, 184, 166, 0.1);
+    color: var(--primary-color);
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.closed-tag {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.manage-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.manage-card-desc {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.3;
+    margin: 0;
+}
+
+.manage-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.manage-card-meta .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* Edit Status Box */
+.edit-status-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.edit-status-box.edit-pending {
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.edit-status-box.edit-approved {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.edit-status-box.edit-rejected {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.edit-approved-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.edit-approved-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-post-changes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-post-changes:hover {
+    background: #16a34a;
+    transform: translateY(-1px);
+}
+
+/* Action Buttons */
+.manage-card-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.btn-manage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.6rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+
+.btn-manage.edit {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+    border-color: rgba(59, 130, 246, 0.2);
+}
+
+.btn-manage.edit:hover:not(:disabled) {
+    background: #3b82f6;
+    color: white;
+}
+
+.btn-manage.close-reg {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border-color: rgba(239, 68, 68, 0.2);
+}
+
+.btn-manage.close-reg:hover:not(:disabled) {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-manage.notify {
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+    border-color: rgba(245, 158, 11, 0.2);
+}
+
+.btn-manage.notify:hover {
+    background: #f59e0b;
+    color: white;
+}
+
+.btn-manage.details {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+.btn-manage.details:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-manage:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .manage-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .manage-card-actions {
+        grid-template-columns: 1fr;
+    }
+}

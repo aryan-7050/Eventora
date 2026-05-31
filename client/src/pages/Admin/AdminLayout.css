@@ -1,0 +1,125 @@
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.admin-main {
+    flex-grow: 1;
+    margin-left: 280px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+}
+
+.admin-topbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: var(--surface-color);
+    border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.admin-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.admin-topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.admin-theme-toggle,
+.admin-notif-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.admin-theme-toggle:hover,
+.admin-notif-btn:hover {
+    background: var(--bg-color);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.notif-badge {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    background: #a855f7;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 700;
+    height: 15px;
+    min-width: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--surface-color);
+}
+
+.admin-topbar-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6d28d9, #a855f7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.admin-content {
+    padding: 2rem;
+    flex-grow: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .admin-main {
+        margin-left: 0;
+    }
+
+    .admin-menu-toggle {
+        display: flex;
+    }
+
+    .admin-topbar {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-content {
+        padding: 1.5rem;
+    }
+}

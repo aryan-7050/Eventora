@@ -1,0 +1,140 @@
+.features {
+    padding: 100px 0;
+    position: relative;
+}
+
+.features-header {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-description {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.feature-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon-wrapper.blue {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+}
+
+.feature-icon-wrapper.purple {
+    background: rgba(168, 85, 247, 0.1);
+    color: #a855f7;
+}
+
+.feature-icon-wrapper.orange {
+    background: rgba(249, 115, 22, 0.1);
+    color: #f97316;
+}
+
+.feature-icon-wrapper.green {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+}
+
+.feature-icon-wrapper.gold {
+    background: rgba(234, 179, 8, 0.1);
+    color: #eab308;
+}
+
+.feature-icon-wrapper.red {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.feature-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.mt-16 {
+    margin-top: 4rem;
+}
+
+.interactive-demo {
+    padding: 3rem;
+    text-align: center;
+}
+
+.interactive-demo h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.interactive-demo p {
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    font-size: 1.125rem;
+}
+
+.portal-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    text-align: left;
+}
+
+.portal-card {
+    padding: 1.5rem;
+    background: var(--bg-color);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.portal-icon {
+    margin-bottom: 1rem;
+}
+
+.portal-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.portal-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}

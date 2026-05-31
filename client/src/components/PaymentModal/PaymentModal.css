@@ -1,0 +1,160 @@
+.pm-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.pm-modal-content {
+    width: 100%;
+    max-width: 450px;
+    padding: 2.5rem;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pm-modal-close-btn {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pm-modal-close-btn:hover {
+    color: var(--text-primary);
+    transform: rotate(90deg);
+}
+
+.pm-modal-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pm-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--club-primary);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.pm-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.pm-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.pm-subtitle span {
+    color: var(--club-primary);
+    font-weight: 600;
+}
+
+.pm-amount-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.pm-amount-badge span {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.pm-amount-badge h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.pm-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pm-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pm-input-group label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pm-input-group input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.pm-input-group input:focus {
+    outline: none;
+    border-color: var(--club-primary);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.pm-hint {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.pm-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pm-actions .btn {
+    flex: 1;
+    padding: 0.875rem;
+}
+
+.pm-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 480px) {
+    .pm-modal-content {
+        padding: 1.5rem;
+    }
+}

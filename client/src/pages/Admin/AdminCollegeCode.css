@@ -1,0 +1,235 @@
+.cc-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cc-main-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cc-icon-top {
+    width: 80px;
+    height: 80px;
+    border-radius: 24px;
+    background: rgba(168, 85, 247, 0.1);
+    color: #a855f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.cc-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.cc-empty {
+    text-transform: none;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.cc-code-display {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.cc-char {
+    width: 50px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    border: 2px solid rgba(168, 85, 247, 0.3);
+    border-radius: var(--radius-md);
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #a855f7;
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+.cc-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cc-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.cc-btn.copy {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.cc-btn.regen {
+    background: rgba(168, 85, 247, 0.1);
+    color: #a855f7;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.cc-btn.del {
+    background: rgba(239, 68, 68, 0.05);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+.cc-btn.del.confirm {
+    background: #ef4444;
+    color: #fff;
+}
+
+.cc-warn {
+    margin-top: 1.5rem;
+    color: #f97316;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.cc-gen-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Custom Card */
+.cc-custom-card {
+    padding: 2rem;
+}
+
+.cc-custom-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.cc-custom-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.cc-input-row {
+    display: flex;
+    gap: 1rem;
+    max-width: 400px;
+}
+
+.cc-input {
+    flex-grow: 1;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.cc-input:focus {
+    outline: none;
+    border-color: #a855f7;
+}
+
+.cc-error {
+    color: #ef4444;
+    font-size: 0.85rem;
+    margin-top: 0.75rem;
+    font-weight: 500;
+}
+
+/* ── Premium Admin Button ── */
+.btn-admin {
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    color: white !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-admin:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4);
+    filter: brightness(1.1);
+}
+
+.btn-admin:active {
+    transform: translateY(0);
+}
+
+.cc-input-row .btn-admin {
+    white-space: nowrap;
+}
+
+/* Info Card */
+.cc-info-card {
+    padding: 2rem;
+}
+
+.cc-info-card h4 {
+    margin-bottom: 1rem;
+}
+
+.cc-info-card ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cc-info-card li {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 600px) {
+    .cc-char {
+        width: 40px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    .cc-input-row {
+        flex-direction: column;
+    }
+}

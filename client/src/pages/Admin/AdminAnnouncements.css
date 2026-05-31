@@ -1,0 +1,249 @@
+.admin-announcements-container {
+    padding-bottom: 2rem;
+}
+
+.admin-announcements-container .announcement-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.admin-announcements-container .announcement-form-wrapper {
+    padding: 2.5rem;
+}
+
+.admin-announcements-container textarea {
+    width: 100%;
+    min-height: 180px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.25rem;
+    color: white;
+    font-size: 1rem;
+    resize: vertical;
+    margin-top: 0.75rem;
+    transition: all 0.3s;
+}
+
+.admin-announcements-container textarea:focus {
+    border-color: #ef4444;
+    outline: none;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.2);
+}
+
+.admin-announcements-container .audience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.admin-announcements-container .audience-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.25rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.admin-announcements-container .audience-card.active {
+    background: rgba(220, 38, 38, 0.15);
+    border-color: #ef4444;
+    color: #ef4444;
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.2);
+    transform: translateY(-2px);
+}
+
+/* History Log Styles */
+.admin-announcement-history {
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 3rem;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.history-card {
+    padding: 2rem;
+    border-left: 4px solid #ef4444;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.hc-header {
+    margin-bottom: 1rem;
+}
+
+.hc-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hc-date {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.hc-labels {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.hc-labels span {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hc-labels .badge-everyone { background: rgba(239, 68, 68, 0.2); color: #fca5a5; }
+.hc-labels .badge-all_clubs { background: rgba(59, 130, 246, 0.2); color: #93c5fd; }
+.hc-labels .badge-all_students { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; }
+.hc-labels .badge-specific_clubs { background: rgba(245, 158, 11, 0.2); color: #fcd34d; }
+
+.hc-message {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f1f5f9;
+    margin: 0;
+}
+
+.empty-history-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    gap: 1.5rem;
+    color: #475569;
+}
+
+.club-selection-box {
+    margin-top: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.selection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.search-mini {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.4rem 0.75rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.search-mini input {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    width: 120px;
+}
+
+.search-mini input:focus {
+    outline: none;
+}
+
+.clubs-grid-mini {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.club-chip {
+    padding: 0.4rem 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 0.2s;
+}
+
+.club-chip:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.club-chip.selected {
+    background: #ef4444;
+    color: white;
+    border-color: #ef4444;
+}
+
+.btn-broadcast-admin {
+    width: 100%;
+    margin-top: 2rem;
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 1.15rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+.authority-seal {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 2px dashed rgba(239, 68, 68, 0.2);
+    border-radius: 16px;
+    color: #ef4444;
+    opacity: 0.6;
+}
+
+.authority-seal span {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+@media (max-width: 900px) {
+    .admin-announcements-container .announcement-layout {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,253 @@
+.event-status-container {
+    padding-bottom: 3rem;
+}
+
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.status-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.status-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.status-pill.pending {
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.status-pill.approved {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.status-pill.rejected {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.posted-pill {
+    background: #a855f7;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.event-mini-meta {
+    display: flex;
+    gap: 1.25rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.event-mini-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.rejection-box,
+.post-box,
+.pending-box,
+.live-box {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+.rejection-box {
+    background: rgba(239, 68, 68, 0.05);
+    border: 1px solid rgba(239, 68, 68, 0.1);
+}
+
+.rb-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ef4444;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.rejection-box p {
+    color: #94a3b8;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.post-box {
+    background: rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(16, 185, 129, 0.1);
+}
+
+.post-box p {
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+
+.pending-box {
+    background: rgba(245, 158, 11, 0.05);
+    border: 1px solid rgba(245, 158, 11, 0.1);
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+.live-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    background: rgba(168, 85, 247, 0.1);
+    color: #a855f7;
+    font-weight: 700;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.post-btn {
+    background: #10b981;
+    color: white;
+    border: none;
+}
+
+.post-btn:hover {
+    background: #059669;
+    transform: scale(1.02);
+}
+
+.edit-btn {
+    background: #3b82f6;
+    color: white;
+    border: none;
+}
+
+.edit-btn:hover {
+    background: #2563eb;
+    transform: scale(1.02);
+}
+
+.view-details-btn-small {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.6rem;
+    background: rgba(168, 85, 247, 0.1);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 4px;
+    color: #a855f7;
+    font-size: 0.7rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-left: auto;
+}
+
+.view-details-btn-small:hover {
+    background: #a855f7;
+    color: white;
+}
+
+/* Edit Proposal Status Box */
+.edit-proposal-box {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+.edit-proposal-box.edit-pending {
+    background: rgba(245, 158, 11, 0.05);
+    border: 1px solid rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.edit-proposal-box.edit-approved {
+    background: rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.edit-proposal-box.edit-rejected {
+    background: rgba(239, 68, 68, 0.05);
+    border: 1px solid rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.edit-proposal-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.edit-proposal-approved {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.edit-proposal-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.notify-btn {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.notify-btn:hover {
+    background: #f59e0b;
+    color: white;
+    transform: scale(1.02);
+}
+
+@media (max-width: 480px) {
+    .status-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .edit-proposal-actions {
+        flex-direction: column;
+    }
+}

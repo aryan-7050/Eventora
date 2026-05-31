@@ -1,0 +1,320 @@
+.cert-generator-container {
+    padding-bottom: 3rem;
+}
+
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.1));
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.cert-header h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.cert-header p {
+    color: var(--text-secondary);
+}
+
+.btn-signature {
+    background: white;
+    color: #1e293b;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-seal {
+    background: rgba(168, 85, 247, 0.1);
+    color: #a855f7;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.btn-seal:hover {
+    background: #a855f7;
+    color: white;
+}
+
+.btn-signature:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.seal-preview-box {
+    border-radius: 50% !important;
+    width: 180px !important;
+    height: 180px !important;
+    margin: 0 auto 2rem auto;
+}
+
+.cert-events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.cert-event-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.badge-posted {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.badge-pending {
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.event-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    max-width: 80%;
+}
+
+.event-meta {
+    display: flex;
+    gap: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.event-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.btn-cert-primary, .btn-cert-secondary, .btn-cert-post {
+    width: 100%;
+    padding: 0.85rem;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-cert-primary {
+    background: #3b82f6;
+    color: white;
+    border: none;
+}
+
+.btn-cert-primary:hover:not(:disabled) { background: #2563eb; }
+
+.btn-cert-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-cert-secondary:hover { background: rgba(255, 255, 255, 0.1); }
+
+.btn-cert-post {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.btn-cert-post:hover:not(:disabled) { background: rgba(34, 197, 94, 0.2); }
+
+.success-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #22c55e;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.cert-modal {
+    width: 90%;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal-body p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.signature-preview-box {
+    width: 100%;
+    height: 150px;
+    background: rgba(0,0,0,0.2);
+    border: 2px dashed rgba(255,255,255,0.1);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.signature-preview-box img {
+    max-height: 80%;
+    max-width: 80%;
+    object-fit: contain;
+    filter: brightness(1.2);
+}
+
+.empty-signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-muted);
+    gap: 0.5rem;
+}
+
+.btn-upload-label {
+    width: 100%;
+    padding: 1rem;
+    background: #3b82f6;
+    color: white;
+    border-radius: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-upload-label:hover { background: #2563eb; }
+
+@media (max-width: 768px) {
+    .cert-header { flex-direction: column; gap: 1.5rem; text-align: center; }
+}
+
+/* PDF Preview Modal */
+.pdf-preview-modal {
+    width: 95%;
+    max-width: 1100px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.pdf-body {
+    flex: 1;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+}
+
+.pdf-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.modal-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.preview-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.preview-footer .btn-cert-primary {
+    width: auto;
+    padding: 0.75rem 2rem;
+}
+
+.preview-footer .btn-cert-secondary {
+    width: auto;
+    padding: 0.75rem 1.5rem;
+}

@@ -1,0 +1,103 @@
+.student-notifications-container {
+    padding-bottom: 2rem;
+}
+
+.notifications-wrapper {
+    margin-top: 2rem;
+    min-height: 400px;
+    padding: 1.5rem;
+}
+
+.n-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.n-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.n-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateX(5px);
+}
+
+.n-card.unread {
+    border-left: 4px solid var(--club-primary);
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.n-card.read {
+    opacity: 0.8;
+}
+
+.n-icon-box {
+    margin-top: 0.25rem;
+}
+
+.n-card.success .n-icon-box {
+    color: #22c55e;
+}
+
+.n-card.error .n-icon-box {
+    color: #ef4444;
+}
+
+.n-card.info .n-icon-box {
+    color: #3b82f6;
+}
+
+.n-body {
+    flex: 1;
+}
+
+.n-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.unread-dot {
+    width: 8px;
+    height: 8px;
+    background: #3b82f6;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 10px #3b82f6;
+}
+
+.n-message {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.n-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.empty-n-state {
+    text-align: center;
+    padding: 5rem 0;
+    color: var(--text-muted);
+}
+
+.empty-n-state h3 {
+    color: var(--text-primary);
+    margin: 1.5rem 0 0.5rem;
+}

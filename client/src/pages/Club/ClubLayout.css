@@ -1,0 +1,125 @@
+.club-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.club-main {
+    flex-grow: 1;
+    margin-left: 280px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+}
+
+.club-topbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: var(--surface-color);
+    border-bottom: 1px solid rgba(20, 184, 166, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.club-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.club-topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.club-theme-toggle,
+.club-notif-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.club-theme-toggle:hover,
+.club-notif-btn:hover {
+    background: var(--bg-color);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.notif-badge {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    background: #14b8a6;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 700;
+    height: 15px;
+    min-width: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--surface-color);
+}
+
+.club-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0d9488, #14b8a6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.club-content {
+    padding: 2rem;
+    flex-grow: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .club-main {
+        margin-left: 0;
+    }
+
+    .club-menu-toggle {
+        display: flex;
+    }
+
+    .club-topbar {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .club-content {
+        padding: 1.5rem;
+    }
+}

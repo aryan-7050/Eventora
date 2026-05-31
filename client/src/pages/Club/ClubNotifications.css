@@ -1,0 +1,160 @@
+.notifications-container {
+    padding-bottom: 2rem;
+}
+
+.notifications-list {
+    padding: 0;
+    overflow: hidden;
+}
+
+.notification-item {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.notification-item.unread {
+    background: rgba(168, 85, 247, 0.05);
+    border-left: 3px solid #a855f7;
+}
+
+.notification-item.read {
+    opacity: 0.7;
+}
+
+.notification-item:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.n-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.n-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.mark-read-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-secondary);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.mark-read-btn:hover {
+    background: #a855f7;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn-mark-all {
+    background: rgba(168, 85, 247, 0.1);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    color: #a855f7;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-mark-all:hover {
+    background: #a855f7;
+    color: white;
+}
+
+.n-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.success .n-icon {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.error .n-icon {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+.info .n-icon {
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+}
+
+.n-content {
+    flex: 1;
+}
+
+.n-text {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    margin-bottom: 0.4rem;
+}
+
+.n-text strong {
+    color: #a855f7;
+}
+
+.n-reason {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    border-left: 3px solid #ef4444;
+}
+
+.n-time {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.empty-notifications {
+    padding: 4rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.empty-notifications p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.browse-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    gap: 1.5rem;
+    color: #a855f7;
+}
