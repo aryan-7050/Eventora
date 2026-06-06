@@ -58,6 +58,11 @@ import ClubFeedback from './pages/Club/ClubFeedback';
 import ClubProfile from './pages/Club/ClubProfile';
 import ClubCertificates from './pages/Club/ClubCertificates';
 import ProtectedRoute from './components/ProtectedRoute';
+
+import PrivacyPolicy from './pages/Legal/PrivacyPolicy';
+import TermsOfService from './pages/Legal/TermsOfService';
+import CommunityGuidelines from './pages/Legal/CommunityGuidelines';
+
 import {
   ClubPostedEvents,
 } from './pages/Club/ClubPlaceholders';
@@ -142,6 +147,10 @@ function App() {
           <Route path="manage-edit/:id" element={<ManageEditEvent />} />
           <Route path="profile" element={<ClubProfile />} />
         </Route>
+
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/guidelines" element={<CommunityGuidelines />} />
 
       </Routes>
     </Router>

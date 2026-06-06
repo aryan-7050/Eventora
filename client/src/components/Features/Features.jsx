@@ -48,7 +48,7 @@ const Features = () => {
                 <div className="features-header text-center">
                     <h2 className="section-title">Everything You Need to <br /> <span className="text-gradient">Manage Events</span></h2>
                     <p className="section-description">
-                        EventMatrix provides powerful tools for students, clubs, and administrators to create a seamless campus experience.
+                        Eventora provides powerful tools for students, clubs, and administrators to create a seamless campus experience.
                     </p>
                 </div>
 

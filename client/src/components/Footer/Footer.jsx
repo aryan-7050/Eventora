@@ -18,10 +18,10 @@ const Footer = () => {
                             Connecting students, clubs, and admin seamlessly.
                         </p>
                         <div className="social-links">
-                            <a href="#" className="social-link" aria-label="Twitter"><Twitter size={20} /></a>
-                            <a href="#" className="social-link" aria-label="Github"><Github size={20} /></a>
-                            <a href="#" className="social-link" aria-label="LinkedIn"><Linkedin size={20} /></a>
-                            <a href="#" className="social-link" aria-label="Email"><Mail size={20} /></a>
+                            <a href="https://twitter.com/aryanpatil7050" className="social-link" aria-label="Twitter"><Twitter size={20} /></a>
+                            <a href="https://github.com/aryan-7050" className="social-link" aria-label="Github"><Github size={20} /></a>
+                            <a href="https://www.linkedin.com/in/aryan-patil-5b9331291" className="social-link" aria-label="LinkedIn"><Linkedin size={20} /></a>
+                            <a href="mailto:aryanpatil7050@gmail.com" className="social-link" aria-label="Email"><Mail size={20} /></a>
                         </div>
                     </div>
 
@@ -52,6 +52,7 @@ const Footer = () => {
                             <li><Link to="/terms">Terms of Service</Link></li>
                             <li><Link to="/guidelines">Community Guidelines</Link></li>
                         </ul>
+                        
                     </div>
                 </div>
 
