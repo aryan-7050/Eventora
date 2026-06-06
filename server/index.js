@@ -130,15 +130,10 @@ app.use((req, res) => {
 });
 
 // Start Server - FORCE to use port 5001
-const PORT = process.env.PORT || 5001; // Changed default to 5001
+const PORT = process.env.PORT || 5001; 
 
 app.listen(PORT, () => {
-    console.log("=========================================");
     console.log(`🚀 Server running on port ${PORT}`);
     console.log(`📍 Frontend should connect to: http://localhost:${PORT}`);
-    console.log(`🔍 Debug URLs:`);
-    console.log(`   - http://localhost:${PORT}/debug/status`);
-    console.log(`   - http://localhost:${PORT}/debug/admin`);
-    console.log(`   - http://localhost:${PORT}/debug/students`);
-    console.log("=========================================");
+   
 });
