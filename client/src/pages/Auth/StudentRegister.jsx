@@ -61,7 +61,7 @@ const StudentRegister = () => {
                         <label>Full Name</label>
                         <div className="input-with-icon">
                             <User size={18} className="input-icon" />
-                            <input type="text" name="name" placeholder="John Doe" value={formData.name} onChange={handleChange} required />
+                            <input type="text" name="name" placeholder="Aryan Patil" value={formData.name} onChange={handleChange} required />
                         </div>
                     </div>
 
@@ -69,7 +69,7 @@ const StudentRegister = () => {
                         <label>Email Address</label>
                         <div className="input-with-icon">
                             <Mail size={18} className="input-icon" />
-                            <input type="email" name="email" placeholder="john@example.com" value={formData.email} onChange={handleChange} required />
+                            <input type="email" name="email" placeholder="Aryan@example.com" value={formData.email} onChange={handleChange} required />
                         </div>
                     </div>
 

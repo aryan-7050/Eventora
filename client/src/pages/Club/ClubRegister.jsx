@@ -69,7 +69,7 @@ const ClubRegister = () => {
                             <label>Club Head Name <span className="required-star">*</span></label>
                             <div className="input-with-icon">
                                 <User size={18} className="input-icon" />
-                                <input type="text" name="headName" placeholder="Siddharth Jain" value={formData.headName} onChange={handleChange} required />
+                                <input type="text" name="headName" placeholder="Aryan patil" value={formData.headName} onChange={handleChange} required />
                             </div>
                         </div>
                     </div>

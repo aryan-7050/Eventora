@@ -70,7 +70,7 @@ const StudentLogin = () => {
                             <input
                                 type="email"
                                 name="email"
-                                placeholder="john@example.com"
+                                placeholder="Aryan@example.com"
                                 value={formData.email}
                                 onChange={handleChange}
                                 required

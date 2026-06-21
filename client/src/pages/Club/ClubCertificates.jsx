@@ -169,11 +169,11 @@ const ClubCertificates = () => {
                     <div style="position: absolute; top: 50px; left: 60px; height: 50px; display: flex; align-items: center; gap: 15px;">
                         <img src="/logo.png" style="height: 100%;" />
                         <div style="width: 1px; height: 30px; background: #cbd5e1;"></div>
-                        <span style="font-weight: 700; font-size: 14px; letter-spacing: 1px; color: #64748b;">EVENTMATRIX</span>
+                        <span style="font-weight: 700; font-size: 14px; letter-spacing: 1px; color: #64748b;">EVENTORA</span>
                     </div>
 
                     <div style="text-align: center; margin-bottom: 20px;">
-                        <p style="font-size: 16px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px;">Datta Meghe College of Engineering, Navi Mumbai</p>
+                        <p style="font-size: 16px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px;">DR.D.Y.PATIL COLLEGE OF ENGINEERING SALOKHENAGAR KOLHAPUR</p>
                         <h1 style="font-size: 82px; margin: 0; color: #1e1b4b; text-transform: uppercase; letter-spacing: 8px; font-weight: 800;">Certificate</h1>
                         <h2 style="font-size: 20px; margin: 5px 0 0 0; color: #3b82f6; font-weight: 700; letter-spacing: 5px; text-transform: uppercase;">of participation</h2>
                     </div>
@@ -206,7 +206,7 @@ const ClubCertificates = () => {
                     </div>
 
                     <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: #94a3b8; font-size: 10px; letter-spacing: 1px;">
-                        VERIFIED BY EVENTMATRIX PLATFORM • CERTIFICATE ID: ${student._id.toString().toUpperCase()}
+                        VERIFIED BY EVENTORA PLATFORM • CERTIFICATE ID: ${student._id.toString().toUpperCase()}
                     </div>
                 </div>
             `;
