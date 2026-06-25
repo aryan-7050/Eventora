@@ -43,7 +43,7 @@ app.use(
       }
 
       console.log("❌ CORS Blocked:", origin);
-      return callback(new Error("Not allowed by CORS"));
+      return callback(null, false);
     },
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
@@ -54,6 +54,9 @@ app.use(
     ],
   })
 );
+
+// Handle preflight requests
+app.options("*", cors());
 
 // ======================
 // MIDDLEWARE
