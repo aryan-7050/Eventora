@@ -25,46 +25,27 @@ console.log("FRONTEND_URL:", process.env.FRONTEND_URL || "Not Set");
 console.log("=========================================");
 
 // ======================
-// CORS
+// CORS CONFIGURATION
 // ======================
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
-  process.env.FRONTEND_URL,
-].filter(Boolean);
+  "https://eventora-beryl-rho.vercel.app",
+];
 
 app.use(
   cors({
     origin: function (origin, callback) {
-      if (!origin) return callback(null, true);
+      // Allow Postman, mobile apps, server-to-server requests
+      if (!origin) {
+        return callback(null, true);
+      }
 
       if (allowedOrigins.includes(origin)) {
         return callback(null, true);
       }
 
-      console.log("❌ CORS Blocked:", origin);
-      return callback(null, false);
-    },
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allowedHeaders: [
-      "Content-Type",
-      "Authorization",
-      "X-Requested-With",
-    ],
-  })
-);
-
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin) return callback(null, true);
-
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
-
-      console.log("❌ CORS Blocked:", origin);
+      console.log(`❌ CORS Blocked: ${origin}`);
       return callback(new Error("Not allowed by CORS"));
     },
     credentials: true,
