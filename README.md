@@ -1,13 +1,3 @@
-Create a professional GitHub README.md for my MERN Stack project.
-
-Project Name:
-🎉 Eventora – Event Management Platform (MERN)
-
-Description:
-Eventora is a full-stack Event Management Platform built using the MERN Stack. The platform enables users to discover, register for, and manage events, while organizers can create, update, and manage events through a modern dashboard. The application focuses on delivering a responsive, secure, and user-friendly experience with authentication, event management, and scalable architecture.
-
-Generate the README using the following format exactly.
-
 # 🎉 Eventora – Event Management Platform (MERN)
 
 > A modern Event Management Platform developed using the MERN Stack that allows users to discover, create, manage, and register for events through a beautiful and responsive web application.
