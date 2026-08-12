@@ -101,21 +101,7 @@ https://github.com/aryan-7050
 Portfolio:
 https://aryan7050.vercel.app/
 
----
 
-## 📄 License
-
-This project is developed for educational and portfolio purposes.
-
----
-
-## ⭐ If you like this project
-
-Please give this repository a Star ⭐
-
-If you found this project helpful, consider starring the repository and sharing it with others.
-
----
 
 Make the README professional, visually attractive, and recruiter-friendly.
 
