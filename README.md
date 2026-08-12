@@ -1,10 +1,10 @@
-# 🎉 Eventora – Event Management Platform (MERN)
+# Eventora – Event Management Platform (MERN)
 
 > A modern Event Management Platform developed using the MERN Stack that allows users to discover, create, manage, and register for events through a beautiful and responsive web application.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Write a professional project overview explaining that Eventora is a full-stack event management system where users can browse events, register for events, manage their registrations, and organizers can create and manage events using an admin dashboard.
 
@@ -12,7 +12,7 @@ Mention that the project is built using the MERN Stack and follows modern full-s
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 Include features like:
 
@@ -60,7 +60,7 @@ Include features like:
 
 ---
 
-## 🎯 Project Objective
+##  Project Objective
 
 Write a professional objective explaining that Eventora simplifies event organization by providing an easy-to-use platform for both organizers and participants while improving event management efficiency.
 
@@ -72,7 +72,7 @@ Write a professional objective explaining that Eventora simplifies event organiz
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 Include:
 
@@ -89,7 +89,7 @@ Include:
 
 ---
 
-## 👨‍💻 Developer
+##  Developer
 
 | Name | Role |
 |------|------|
